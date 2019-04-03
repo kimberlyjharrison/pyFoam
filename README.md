@@ -5,10 +5,10 @@ Thermal test data post-processing analysis and visualization tool
 Pandas, Matplotlib
 
 ### Background
-As a laboratory manager, one of the more time-intensive portions of my job is to deal with post-test data processing.  I created pyFoam after discovering multiple issues with our legacy VBA-based tool.  Namely, for large datasets, the tool would cause my computer to lock up any Office programs and render me usesless for up to 20 minutes while it chugged on the data.
+As a laboratory manager, one of the more time-intensive portions of my job is to deal with post-test data processing.  I created pyFoam after discovering multiple issues with our legacy VBA-based tool.  Namely, for large datasets, the tool would cause my computer to lock up any Office programs and render me usesless for up to 20 minutes while it chugged on the data to make a few graphs and tables.
 
 ### Approach
-pyFoam takes the test data that has been collected from the data acquisition system in the form of a excel sheet and parses the information into a Pandas DataFrame.  From there, pyFoam will graph and analyze each sample tested.
+pyFoam takes the test data that has been collected from the data acquisition system in the form of a excel sheet and parses the information into a Pandas DataFrame.  From there, pyFoam will graph and analyze each sample tested using Matplotlib.
 
 ### Example Case
-The breaking point came for me on a large dataset that included 6 test samples with 7 thermocouples per sample over a 5 day period (data recorded every 10 minutes).  Using the legacy VBA-based processing tool, processing the data took between 15-30 minutes.  Using pyFoam, it takes under 16 seconds!
+Provided as an example, a non-proprietary dataset is analyzed to demonstrate pyFoam's capabilities. (Note: input data not included)
